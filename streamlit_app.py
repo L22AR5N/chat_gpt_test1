@@ -18,8 +18,8 @@ def generate_response(prompt):
     return message
  
  
-st.header("🤖Yunwoong's ChatGPT-3 (Demo)")
-st.markdown("[Be Original](https://yunwoong.tistory.com/)")
+st.header("🤖ARON's ChatGPT-3 (Demo)")
+st.markdown("[Be Original](https://github.com/L22AR5N/chat_gpt_test1/)")
  
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
