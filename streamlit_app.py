@@ -23,8 +23,6 @@ def generate_response(prompt):
 st.header("🤖ARON's ChatGPT-3 (Demo)")
 
 st.markdown("[Be Original](https://github.com/L22AR5N/chat_gpt_test1/)")
-
-st.markdown("openai.api_key = os.getenv('API_KEY')")
  
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
