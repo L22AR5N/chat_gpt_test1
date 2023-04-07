@@ -5,7 +5,7 @@ import os
 
 openai.api_key = os.getenv('API_KEY')
 
-print(os.getenv('API_KEY'))
+
 def generate_response(prompt):
     completions = openai.Completion.create (
         engine="text-davinci-003",
@@ -20,7 +20,8 @@ def generate_response(prompt):
     return message
  
  
-st.header("🤖ARON's ChatGPT-3 (Demo)")
+st.header("🤖ARON's ChatGPT-3 (Demo)", openai.api_key = os.getenv('API_KEY'))
+
 st.markdown("[Be Original](https://github.com/L22AR5N/chat_gpt_test1/)")
  
 if 'generated' not in st.session_state:
